@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pulaLinha(){
+
+		document.write("<br>");
+		document.write("<br>");
+	
+	}
+
+	function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	function sorteia(n) {
+
+      return n = Math.floor(Math.random() * n);
+    
+    }
+
+	var numeroPensado = sorteia(10);
+
+	var tentativas = 1;
+
+	while(tentativas <= 3){
+		var chute = parseInt(prompt("digite seu chute"));
+
+	  if(chute == numeroPensado){
+		mostra("voce ganhou");
+		break;
+	  } else {
+		mostra("Você errou")
+	 }
+
+	 tentativas++;
+	}
+
+</script>
